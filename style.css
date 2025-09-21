@@ -1,0 +1,57 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* General App Styling */
+[data-testid="stAppViewContainer"] {
+    background-color: #e2e8f0; /* Light gray-blue background */
+    color: #1e293b;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Main Content Block Styling - Sharp edges, no border radius */
+[data-testid="stVerticalBlock"] {
+    background: #ffffff; /* Clean white block */
+    border-radius: 0px;  /* No curves, sharp edges */
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cbd5e1; /* Subtle border */
+}
+
+/* Text Styling */
+h1, h2, h3, p, label, li {
+    color: #1e293b !important; /* Dark slate for readability */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Button Styling */
+.stButton button {
+    background-color: #1e40af; /* Dark indigo */
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 4px; /* Slightly sharp corners */
+    border: none;
+    transition: all 0.25s ease;
+    padding: 10px 22px;
+    box-shadow: 0 3px 8px rgba(30, 64, 175, 0.4);
+    cursor: pointer;
+}
+
+.stButton button:hover {
+    background-color: #1e3a8a; /* Darker indigo */
+    box-shadow: 0 6px 15px rgba(30, 64, 175, 0.6);
+    transform: translateY(-2px);
+}
+
+/* File Uploader Styling */
+[data-testid="stFileUploader"] {
+    background: #f1f5f9; /* Light gray */
+    border-radius: 0px; /* No curves */
+    padding: 15px;
+    border: 1px solid #94a3b8; /* Subtle border */
+    transition: all 0.3s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #1e40af; /* Indigo highlight */
+    box-shadow: 0 0 10px rgba(30, 64, 175, 0.4);
+}
